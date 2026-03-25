@@ -49,11 +49,9 @@ export default function Hero() {
             animation: "fadeUp 0.9s 0.35s both",
           }}
         >
-          Crafting digital
+          From languages
           <br />
-          <em className="text-gradient not-italic">experiences</em>
-          <br />
-          that matter.
+          <em className="text-gradient not-italic">to logic.</em>
         </h1>
 
         <div
@@ -63,7 +61,8 @@ export default function Hero() {
           <p className="text-muted font-light text-lg max-w-md leading-relaxed">
             Full-stack developer based in{" "}
             <span className="text-[var(--text)]">Houston</span>. I build
-            performant, accessible, and beautifully crafted web applications.
+            functional full-stack web applications with clean code and a strong
+            attention to detail.
           </p>
 
           <div className="flex items-center gap-6 shrink-0">
@@ -72,7 +71,9 @@ export default function Hero() {
               className="group inline-flex items-center gap-3 font-mono text-[0.7rem] uppercase tracking-widest text-bg bg-accent px-6 py-3 rounded-full hover:bg-accent/90 transition-all hover:scale-[1.03]"
             >
               View Work
-              <span className="group-hover:translate-x-1 transition-transform">→</span>
+              <span className="group-hover:translate-x-1 transition-transform">
+                →
+              </span>
             </a>
             <a
               href="#contact"
@@ -100,7 +101,14 @@ export default function Hero() {
         className="absolute top-1/3 right-8 md:right-16 hidden lg:flex flex-col gap-3"
         style={{ animation: "fadeIn 1s 0.8s both" }}
       >
-        {["JavaScript", "Express.js", "React", "Next.js", "TypeScript", "Node.js"].map((tag) => (
+        {[
+          "JavaScript",
+          "Express.js",
+          "React",
+          "Node.js",
+          "TypeScript",
+          "Next.js",
+        ].map((tag) => (
           <span
             key={tag}
             className="font-mono text-[0.65rem] uppercase tracking-widest text-muted border border-white/5 bg-surface/50 px-3 py-1.5 rounded-full backdrop-blur-sm"

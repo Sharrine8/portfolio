@@ -23,6 +23,9 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   title: "Christia Anderson — Portfolio",
   description: "Full-stack developer crafting exceptional digital experiences.",
+  icons: {
+    icon: "/favicon.svg",
+  },
   openGraph: {
     title: "Christia Anderson — Portfolio",
     description: "Full-stack developer crafting exceptional digital experiences.",

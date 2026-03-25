@@ -3,14 +3,17 @@ import Image from "next/image";
 
 const stats = [
   { value: "3+", label: "Years Experience" },
-  { value: "20+", label: "Projects Completed" },
+  { value: "10+", label: "Projects Completed" },
   { value: "5+", label: "Technologies Used" },
   { value: "∞", label: "Lines of Code" },
 ];
 
 export default function About() {
   return (
-    <section id="about" className="py-32 px-8 md:px-16 relative overflow-hidden">
+    <section
+      id="about"
+      className="py-32 px-8 md:px-16 relative overflow-hidden"
+    >
       {/* Decorative */}
       <div className="absolute top-0 left-0 w-px h-full bg-gradient-to-b from-transparent via-white/5 to-transparent" />
 
@@ -28,19 +31,27 @@ export default function About() {
           <div className="space-y-5 text-muted font-light leading-relaxed">
             <p>
               Hi, I'm{" "}
-              <span className="text-[var(--text)] font-medium">Christia Anderson</span> —
-              a full-stack developer passionate about crafting digital products
-              that are not only functional but genuinely delightful to use.
+              <span className="text-[var(--text)] font-medium">
+                Christia Anderson
+              </span>{" "}
+              — a full-stack developer who recently completed the TripleTen
+              Software Engineering program and an externship where I worked in a
+              real team environment using Scrum and Agile workflows.
             </p>
             <p>
-              I specialize in building scalable web applications with modern
-              technologies. Whether it's architecting a robust backend or
-              perfecting pixel-level UI details, I care deeply about the full
-              picture.
+              Before tech, I spent years teaching in the US, China, and Brazil.
+              Learning Chinese while teaching English gave me a unique
+              perspective — I became fascinated by the patterns between
+              languages and how understanding one language's structure changes
+              how you teach another. That same love of patterns and systems is
+              what drew me to software development.
             </p>
             <p>
-              When I'm not coding, you'll find me exploring design systems,
-              contributing to open source, or hunting for the perfect espresso.
+              I hold two bachelor's degrees in Chinese and International Trade
+              &amp; Economics, speak four languages, and have lived across three
+              continents. When I'm not coding, you'll find me in a deep work
+              session, solving puzzles, planning the next adventure, or simply
+              spending time with family.
             </p>
           </div>
 
@@ -53,12 +64,12 @@ export default function About() {
                 >
                   {tag}
                 </span>
-              )
+              ),
             )}
           </div>
         </div>
 
-        {/* Right: Stats + Image placeholder */}
+        {/* Right: Stats + Image */}
         <div className="flex flex-col gap-8">
           {/* Profile image */}
           <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-surface2 border border-white/5 card-border">

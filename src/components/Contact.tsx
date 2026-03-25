@@ -74,7 +74,10 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-32 px-8 md:px-16 relative overflow-hidden">
+    <section
+      id="contact"
+      className="py-32 px-8 md:px-16 relative overflow-hidden"
+    >
       {/* Blob */}
       <div className="absolute bottom-0 right-0 w-96 h-96 rounded-full bg-accent2 opacity-[0.06] blur-[100px] pointer-events-none" />
 
@@ -87,7 +90,7 @@ export default function Contact() {
           <h2 className="font-display font-black text-5xl md:text-6xl leading-tight tracking-tight mb-8">
             Let's build
             <br />
-            <em className="italic text-gradient">something.</em>
+            <em className="italic text-gradient">together.</em>
           </h2>
           <p className="text-muted font-light leading-relaxed mb-10 max-w-sm">
             Have a project in mind, a question, or just want to say hi? My inbox
@@ -106,7 +109,9 @@ export default function Contact() {
               >
                 <span className="w-6 h-px bg-white/10 group-hover:bg-accent group-hover:w-10 transition-all duration-300" />
                 {s.label}
-                <span className="opacity-0 group-hover:opacity-100 transition-opacity">↗</span>
+                <span className="opacity-0 group-hover:opacity-100 transition-opacity">
+                  ↗
+                </span>
               </a>
             ))}
           </div>
@@ -119,7 +124,9 @@ export default function Contact() {
               <div className="w-14 h-14 rounded-full bg-accent/10 border border-accent/20 flex items-center justify-center mb-6 text-2xl">
                 ✦
               </div>
-              <h3 className="font-display font-bold text-2xl mb-3">Message sent!</h3>
+              <h3 className="font-display font-bold text-2xl mb-3">
+                Message sent!
+              </h3>
               <p className="text-muted font-light text-sm mb-8">
                 Thanks for reaching out. I'll get back to you soon.
               </p>
@@ -131,7 +138,10 @@ export default function Contact() {
               </button>
             </div>
           ) : (
-            <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-5">
+            <form
+              onSubmit={handleSubmit(onSubmit)}
+              className="flex flex-col gap-5"
+            >
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <Field label="Name" error={errors.name?.message}>
                   <input
@@ -180,7 +190,7 @@ export default function Contact() {
                   "inline-flex items-center justify-center gap-3 font-mono text-[0.7rem] uppercase tracking-widest rounded-full py-3.5 px-8 transition-all duration-200",
                   status === "loading"
                     ? "bg-accent/60 text-bg cursor-not-allowed"
-                    : "bg-accent text-bg hover:bg-accent/90 hover:scale-[1.02]"
+                    : "bg-accent text-bg hover:bg-accent/90 hover:scale-[1.02]",
                 )}
               >
                 {status === "loading" ? (

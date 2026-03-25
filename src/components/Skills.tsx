@@ -6,7 +6,7 @@ const skillGroups = [
     skills: [
       { name: "HTML & CSS", tag: "Daily Driver" },
       { name: "JavaScript", tag: "Daily Driver" },
-      { name: "React & React Hooks", tag: "Daily Driver" },
+      { name: "React", tag: "Daily Driver" },
       { name: "Context API", tag: "Proficient" },
       { name: "Next.js", tag: "Proficient" },
       { name: "Tailwind CSS", tag: "Proficient" },
@@ -22,6 +22,7 @@ const skillGroups = [
       { name: "MongoDB / NoSQL", tag: "Proficient" },
       { name: "Docker", tag: "Familiar" },
       { name: "Postman", tag: "Proficient" },
+      { name: "JWT Authentication", tag: "Proficient" },
     ],
   },
   {
@@ -32,6 +33,11 @@ const skillGroups = [
       { name: "Figma", tag: "Daily Driver" },
       { name: "Vercel", tag: "Familiar" },
       { name: "Scrum / Agile", tag: "Daily Driver" },
+      { name: "Vite", tag: "Proficient" },
+      { name: "Jira", tag: "Familiar" },
+      { name: "NginX", tag: "Familiar" },
+      { name: "GCP", tag: "Familiar" },
+      { name: "ESLint", tag: "Proficient" },
     ],
   },
 ];
@@ -46,7 +52,8 @@ const marqueeItems = [
   "HTML", "CSS", "JavaScript", "React", "Next.js",
   "Tailwind", "TypeScript", "Node.js", "Express.js",
   "MongoDB", "REST APIs", "Docker", "Postman",
-  "Git", "Figma", "Vercel", "Scrum",
+  "Git", "Figma", "Vercel", "Scrum", "Vite", "Jira",
+  "NginX", "GCP", "JWT Authentication", "ESLint",
 ];
 
 export default function Skills() {
