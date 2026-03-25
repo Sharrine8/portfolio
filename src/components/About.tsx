@@ -1,9 +1,10 @@
 "use client";
+import Image from "next/image";
 
 const stats = [
   { value: "3+", label: "Years Experience" },
-  { value: "20+", label: "Projects Shipped" },
-  { value: "10+", label: "Happy Clients" },
+  { value: "20+", label: "Projects Completed" },
+  { value: "5+", label: "Technologies Used" },
   { value: "∞", label: "Lines of Code" },
 ];
 
@@ -27,7 +28,7 @@ export default function About() {
           <div className="space-y-5 text-muted font-light leading-relaxed">
             <p>
               Hi, I'm{" "}
-              <span className="text-[var(--text)] font-medium">Your Name</span> —
+              <span className="text-[var(--text)] font-medium">Christia Anderson</span> —
               a full-stack developer passionate about crafting digital products
               that are not only functional but genuinely delightful to use.
             </p>
@@ -44,7 +45,7 @@ export default function About() {
           </div>
 
           <div className="mt-10 flex flex-wrap gap-3">
-            {["Open to Work", "Remote Friendly", "Based in Your City"].map(
+            {["Open to Work", "Remote Friendly", "Based in Houston"].map(
               (tag) => (
                 <span
                   key={tag}
@@ -59,18 +60,14 @@ export default function About() {
 
         {/* Right: Stats + Image placeholder */}
         <div className="flex flex-col gap-8">
-          {/* Profile image placeholder */}
+          {/* Profile image */}
           <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-surface2 border border-white/5 card-border">
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-center">
-                <div className="w-24 h-24 rounded-full bg-gradient-to-br from-accent/20 to-accent2/20 border border-white/10 mx-auto mb-4 flex items-center justify-center">
-                  <span className="font-display text-3xl font-bold text-gradient">YN</span>
-                </div>
-                <p className="font-mono text-[0.65rem] text-muted uppercase tracking-widest">
-                  Replace with your photo
-                </p>
-              </div>
-            </div>
+            <Image
+              src="/profile.jpeg"
+              alt="Christia Anderson"
+              fill
+              className="object-cover grayscale contrast-125 opacity-90"
+            />
             {/* Decorative corner */}
             <div className="absolute top-4 right-4 w-6 h-6 border-t border-r border-accent/30" />
             <div className="absolute bottom-4 left-4 w-6 h-6 border-b border-l border-accent/30" />

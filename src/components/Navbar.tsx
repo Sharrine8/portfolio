@@ -32,7 +32,7 @@ export default function Navbar() {
         href="#"
         className="font-display text-xl font-bold tracking-tight hover:opacity-80 transition-opacity"
       >
-        YN<span className="text-accent">.</span>
+        CA<span className="text-accent">.</span>
       </a>
 
       <nav className="hidden md:flex items-center gap-10">

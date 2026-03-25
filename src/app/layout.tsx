@@ -21,10 +21,10 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Your Name — Portfolio",
+  title: "Christia Anderson — Portfolio",
   description: "Full-stack developer crafting exceptional digital experiences.",
   openGraph: {
-    title: "Your Name — Portfolio",
+    title: "Christia Anderson — Portfolio",
     description: "Full-stack developer crafting exceptional digital experiences.",
     type: "website",
   },

@@ -62,7 +62,7 @@ export default function Hero() {
         >
           <p className="text-muted font-light text-lg max-w-md leading-relaxed">
             Full-stack developer based in{" "}
-            <span className="text-[var(--text)]">Your City</span>. I build
+            <span className="text-[var(--text)]">Houston</span>. I build
             performant, accessible, and beautifully crafted web applications.
           </p>
 
@@ -97,10 +97,10 @@ export default function Hero() {
 
       {/* Floating tags */}
       <div
-        className="absolute top-1/3 right-8 md:right-16 flex flex-col gap-3 hidden lg:flex"
+        className="absolute top-1/3 right-8 md:right-16 hidden lg:flex flex-col gap-3"
         style={{ animation: "fadeIn 1s 0.8s both" }}
       >
-        {["React", "Next.js", "TypeScript", "Node.js"].map((tag) => (
+        {["JavaScript", "Express.js", "React", "Next.js", "TypeScript", "Node.js"].map((tag) => (
           <span
             key={tag}
             className="font-mono text-[0.65rem] uppercase tracking-widest text-muted border border-white/5 bg-surface/50 px-3 py-1.5 rounded-full backdrop-blur-sm"

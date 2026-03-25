@@ -18,9 +18,8 @@ type FormData = z.infer<typeof schema>;
 type Status = "idle" | "loading" | "success" | "error";
 
 const socials = [
-  { label: "GitHub", href: "https://github.com/yourusername" },
-  { label: "LinkedIn", href: "https://linkedin.com/in/yourusername" },
-  { label: "Twitter / X", href: "https://twitter.com/yourusername" },
+  { label: "GitHub", href: "https://github.com/sharrine8" },
+  { label: "LinkedIn", href: "https://linkedin.com/in/christia-anderson" },
 ];
 
 function Field({

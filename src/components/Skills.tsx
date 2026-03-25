@@ -4,36 +4,49 @@ const skillGroups = [
   {
     category: "Frontend",
     skills: [
-      { name: "React / Next.js", level: 95 },
-      { name: "TypeScript", level: 90 },
-      { name: "Tailwind CSS", level: 92 },
-      { name: "Framer Motion", level: 80 },
+      { name: "HTML & CSS", tag: "Daily Driver" },
+      { name: "JavaScript", tag: "Daily Driver" },
+      { name: "React & React Hooks", tag: "Daily Driver" },
+      { name: "Context API", tag: "Proficient" },
+      { name: "Next.js", tag: "Proficient" },
+      { name: "Tailwind CSS", tag: "Proficient" },
+      { name: "TypeScript", tag: "Familiar" },
     ],
   },
   {
     category: "Backend",
     skills: [
-      { name: "Node.js", level: 88 },
-      { name: "PostgreSQL", level: 82 },
-      { name: "REST & GraphQL APIs", level: 85 },
-      { name: "Docker", level: 70 },
+      { name: "Node.js", tag: "Proficient" },
+      { name: "Express.js", tag: "Proficient" },
+      { name: "REST APIs", tag: "Proficient" },
+      { name: "MongoDB / NoSQL", tag: "Proficient" },
+      { name: "Docker", tag: "Familiar" },
+      { name: "Postman", tag: "Proficient" },
     ],
   },
   {
-    category: "Tooling",
+    category: "Tooling & Workflow",
     skills: [
-      { name: "Git & GitHub", level: 95 },
-      { name: "CI/CD", level: 75 },
-      { name: "Vercel / AWS", level: 80 },
-      { name: "Figma", level: 70 },
+      { name: "Git & GitHub", tag: "Daily Driver" },
+      { name: "VS Code", tag: "Daily Driver" },
+      { name: "Figma", tag: "Daily Driver" },
+      { name: "Vercel", tag: "Familiar" },
+      { name: "Scrum / Agile", tag: "Daily Driver" },
     ],
   },
 ];
 
+const tagStyles: Record<string, string> = {
+  "Daily Driver": "text-accent border-accent/20 bg-accent/5",
+  "Proficient":   "text-accent2 border-accent2/20 bg-accent2/5",
+  "Familiar":     "text-muted border-white/10 bg-white/[0.03]",
+};
+
 const marqueeItems = [
-  "React", "Next.js", "TypeScript", "Tailwind", "Node.js",
-  "PostgreSQL", "Prisma", "Docker", "GraphQL", "Vercel",
-  "Figma", "Git", "AWS", "REST APIs", "MongoDB",
+  "HTML", "CSS", "JavaScript", "React", "Next.js",
+  "Tailwind", "TypeScript", "Node.js", "Express.js",
+  "MongoDB", "REST APIs", "Docker", "Postman",
+  "Git", "Figma", "Vercel", "Scrum",
 ];
 
 export default function Skills() {
@@ -66,6 +79,18 @@ export default function Skills() {
           </h2>
         </div>
 
+        {/* Legend */}
+        <div className="flex items-center gap-6 mb-12">
+          {Object.entries(tagStyles).map(([label, style]) => (
+            <span
+              key={label}
+              className={`font-mono text-[0.6rem] uppercase tracking-widest border px-3 py-1 rounded-full ${style}`}
+            >
+              {label}
+            </span>
+          ))}
+        </div>
+
         {/* Skill groups */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {skillGroups.map((group) => (
@@ -73,23 +98,20 @@ export default function Skills() {
               <h3 className="font-mono text-[0.65rem] uppercase tracking-[0.15em] text-accent mb-6 pb-3 border-b border-white/5">
                 {group.category}
               </h3>
-              <div className="space-y-5">
+              <div className="space-y-3">
                 {group.skills.map((skill) => (
-                  <div key={skill.name}>
-                    <div className="flex justify-between items-center mb-1.5">
-                      <span className="font-light text-sm text-[var(--text)]">
-                        {skill.name}
-                      </span>
-                      <span className="font-mono text-[0.6rem] text-muted">
-                        {skill.level}%
-                      </span>
-                    </div>
-                    <div className="h-px bg-white/5 rounded-full overflow-hidden">
-                      <div
-                        className="h-full bg-gradient-to-r from-accent to-accent2 rounded-full"
-                        style={{ width: `${skill.level}%` }}
-                      />
-                    </div>
+                  <div
+                    key={skill.name}
+                    className="flex items-center justify-between gap-4"
+                  >
+                    <span className="font-light text-sm text-[var(--text)]">
+                      {skill.name}
+                    </span>
+                    <span
+                      className={`shrink-0 font-mono text-[0.6rem] uppercase tracking-widest border px-2.5 py-1 rounded-full ${tagStyles[skill.tag]}`}
+                    >
+                      {skill.tag}
+                    </span>
                   </div>
                 ))}
               </div>
