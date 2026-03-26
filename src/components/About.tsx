@@ -31,10 +31,8 @@ export default function About() {
           <div className="space-y-5 text-muted font-light leading-relaxed">
             <p>
               Hi, I'm{" "}
-              <span className="text-[var(--text)] font-medium">
-                Christia Anderson
-              </span>{" "}
-              — a full-stack developer who recently completed the TripleTen
+              <span className="text-[var(--text)] font-medium">Christia</span> —
+              a full-stack developer who recently completed the TripleTen
               Software Engineering program and an externship where I worked in a
               real team environment using Scrum and Agile workflows.
             </p>

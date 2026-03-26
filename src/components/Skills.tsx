@@ -11,6 +11,8 @@ const skillGroups = [
       { name: "Next.js", tag: "Proficient" },
       { name: "Tailwind CSS", tag: "Proficient" },
       { name: "TypeScript", tag: "Familiar" },
+      { name: "OOP", tag: "Proficient" },
+      { name: "BEM", tag: "Proficient" },
     ],
   },
   {
@@ -44,16 +46,36 @@ const skillGroups = [
 
 const tagStyles: Record<string, string> = {
   "Daily Driver": "text-accent border-accent/20 bg-accent/5",
-  "Proficient":   "text-accent2 border-accent2/20 bg-accent2/5",
-  "Familiar":     "text-muted border-white/10 bg-white/[0.03]",
+  Proficient: "text-accent2 border-accent2/20 bg-accent2/5",
+  Familiar: "text-muted border-white/10 bg-white/[0.03]",
 };
 
 const marqueeItems = [
-  "HTML", "CSS", "JavaScript", "React", "Next.js",
-  "Tailwind", "TypeScript", "Node.js", "Express.js",
-  "MongoDB", "REST APIs", "Docker", "Postman",
-  "Git", "Figma", "Vercel", "Scrum", "Vite", "Jira",
-  "NginX", "GCP", "JWT Authentication", "ESLint",
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "React",
+  "Next.js",
+  "Tailwind",
+  "TypeScript",
+  "Node.js",
+  "Express.js",
+  "MongoDB",
+  "REST APIs",
+  "Docker",
+  "Postman",
+  "Git",
+  "Figma",
+  "Vercel",
+  "Scrum",
+  "Vite",
+  "Jira",
+  "NginX",
+  "GCP",
+  "JWT Authentication",
+  "ESLint",
+  "OOP",
+  "BEM",
 ];
 
 export default function Skills() {
