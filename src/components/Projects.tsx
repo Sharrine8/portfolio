@@ -17,9 +17,37 @@ export interface Project {
 
 const projects: Project[] = [
   {
+    title: "What to Wear",
+    description:
+      "A full-stack weather app that detects your current location and suggests what to wear based on live conditions. Features user authentication, personal accounts, and a clothing manager where users can add and remove their own items. Users can also like clothing items added by others in the community.",
+    tags: [
+      "React",
+      "Vite",
+      "JavaScript",
+      "HTML/CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "JWT Auth",
+      "GCP",
+      "NginX",
+    ],
+    href: "https://se-project-react-sigma.vercel.app/#/",
+    github: "https://github.com/Sharrine8/se_project_react",
+    featured: true,
+    year: "2025",
+    images: [
+      "/wtwr-1.png",
+      "/wtwr-2.png",
+      "/wtwr-3.png",
+      "/wtwr-4.png",
+      "/wtwr-5.png",
+    ],
+  },
+  {
     title: "News Explorer",
     description:
-      "A responsive web application that allows users to search for news articles, save them to their account, and view their saved articles.",
+      "A news search app powered by the NewsAPI. Users can search for articles on any topic, with a loading state while results are fetched. Supports multiple user accounts with sign in and sign out functionality, and allows users to like andsave articles to their personal collection.",
     tags: [
       "React",
       "Vite",
@@ -41,33 +69,6 @@ const projects: Project[] = [
       "/news-explorer-4.png",
     ],
   },
-  // {
-  //   title: "What to Wear",
-  //   description:
-  //     "A responsive web application that allows users to search for news articles, save them to their account, and view their saved articles.",
-  //   tags: [
-  //     "React",
-  //     "Vite",
-  //     "JavaScript",
-  //     "HTML/CSS",
-  //     "Node.js",
-  //     "Express.js",
-  //     "MongoDB",
-  //     "JWT Auth",
-  //     "GCP",
-  //     "NginX",
-  //   ],
-  //   href: "https://sharrine8.github.io/se_project_react/",
-  //   github: "https://github.com/Sharrine8/se_project_frontend",
-  //   featured: true,
-  //   year: "2025",
-  //   images: [
-  //     "/news-explorer-1.png",
-  //     "/news-explorer-2.png",
-  //     "/news-explorer-3.png",
-  //     "/news-explorer-4.png",
-  //   ],
-  // },
   {
     title: "Friendsgiving - Code Jam Winner 2",
     description:
