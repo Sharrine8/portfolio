@@ -35,7 +35,7 @@ const projects: Project[] = [
     href: "https://se-project-react-sigma.vercel.app/#/",
     github: "https://github.com/Sharrine8/se_project_react",
     featured: true,
-    year: "2025",
+    year: "2024",
     images: [
       "/wtwr-1.png",
       "/wtwr-2.png",
@@ -83,7 +83,7 @@ const projects: Project[] = [
     ],
     href: "https://sharrine8.github.io/code-jam_react/",
     github: "https://github.com/Sharrine8/code-jam_react",
-    featured: true,
+    featured: false,
     year: "2024",
     images: [
       "/friendsgiving-1.png",
@@ -100,7 +100,7 @@ const projects: Project[] = [
     tags: ["HTML/CSS", "JavaScript", "BEM", "OOP", "4-day hackathon"],
     href: "https://sharrine8.github.io/code-jam_golden-oak/",
     github: "https://github.com/Sharrine8/code-jam_golden-oak",
-    featured: true,
+    featured: false,
     year: "2024",
     images: [
       "/golden-oak-1.png",

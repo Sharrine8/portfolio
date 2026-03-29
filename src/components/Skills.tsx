@@ -34,7 +34,7 @@ const skillGroups = [
       { name: "VS Code", tag: "Daily Driver" },
       { name: "Figma", tag: "Daily Driver" },
       { name: "Vercel", tag: "Familiar" },
-      { name: "Scrum / Agile", tag: "Daily Driver" },
+      { name: "Scrum / Agile", tag: "Proficient" },
       { name: "Vite", tag: "Proficient" },
       { name: "Jira", tag: "Familiar" },
       { name: "NginX", tag: "Familiar" },
